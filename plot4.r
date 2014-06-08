@@ -32,7 +32,7 @@ plot(submeterbind$Time, submeterbind$Measurement,
 lines(submeterbind$Time[sublevels == "Sub_metering_1"], submeterbind$Measurement[sublevels == "Sub_metering_1"], lwd = 1.5)
 lines(submeterbind$Time[sublevels == "Sub_metering_2"], submeterbind$Measurement[sublevels == "Sub_metering_2"], lwd = 1.5, col = "red")
 lines(submeterbind$Time[sublevels == "Sub_metering_3"], submeterbind$Measurement[sublevels == "Sub_metering_3"], lwd = 1.5, col = "blue")
-legend("topright", pch = "-" , col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", pch = "-" , col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
 
 #Chart 3
 plot(subdata$Time, subdata$Voltage, type = "n",
